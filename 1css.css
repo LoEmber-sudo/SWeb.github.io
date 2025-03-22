@@ -1,6 +1,6 @@
 @media only screen and (max-width: 1900) {
 	
-body {
+.body {
     background: url('WHNHNC.png') no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
