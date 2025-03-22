@@ -11,7 +11,7 @@ body {
 }
 #title{
 	height: 35rem;
-	width: 55vw;
+	width: auto;
 	top: 5vh;
 	left: 30rem;
 	position: absolute;
