@@ -1,0 +1,373 @@
+
+@font-face {
+  font-family: Swinepighu;
+  src: url(SWINPH.ttf);
+}
+body {
+	background-image: url(rabbit_message.png), linear-gradient(SandyBrown,#ff8c26);
+	background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+	background-size: 52%, cover;
+	overflow-x: hidden;
+	transform: translateX(0);
+	cursor: url(cursor.cur) auto;
+}
+#cim {
+	text-align: top center;
+	font-size: 300%;
+	color: #F5DEB3;
+	font-family: Swinepighu;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+	-webkit-text-stroke: 1px black;
+	text-shadow: 0 0 5px rgba(255, 215, 0, 0.8);
+}
+.rectangle {
+	width: 20%;
+	height: 30%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transform: translateX(260%) translateY(-60%) rotate(45deg);
+	position: absolute;
+	z-index: -2;
+        }
+
+    .rectangle img {
+        max-width: 100%;
+        max-height: 100%;
+        }
+.rectangle3 {
+	width: 25%;
+	height: 35%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transform: translateX(50%) translateY(-80%);
+	position: absolute;
+	z-index: -2;
+        }
+
+    .rectangle3 img {
+        max-width: 75%;
+        max-height: 75%;
+        }
+.rectangle4 {
+	width: 25%;
+	height: 35%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	left: 50%;
+    transform: translateX(200vw) translateY(-100vh);
+	position: absolute;
+	z-index: -2;
+        }
+
+    .rectangle4 img {
+        max-width: 75%;
+        max-height: 75%;
+        }
+
+.rectangle2 {
+    width: 20%;
+	height: 30%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	left: 50%;
+	transform: translateX(-120%) translateY(-60%) rotate(-45deg);
+	position: absolute;
+	z-index: -2;
+        }
+
+    .rectangle2 img {
+        max-width: 95%;
+        max-height: 95%;
+        }
+
+a {
+    display: inline-block; /* Ensures the link doesn't disrupt the layout */
+}
+a img {
+    object-fit: contain;     /* Makes the image responsive */
+    width: 100%;
+    height: 100%;    /* Keeps the aspect ratio */
+}
+.slider-container {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.2s ease-in-out;
+}
+
+.slide {
+    position: absolute;
+	width: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.slide.active {
+    opacity: 1;
+    position: relative;
+}
+
+
+.prev, .next {
+    position: absolute;
+	top: 430px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 40px;
+    border-radius: 10px;
+}
+
+.prev { 
+	position: fixed;
+    left: 10px;
+}
+.next {
+    position: fixed;
+    left: 380px;
+ }
+
+.dots-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    transform: translateX(-730px);
+}
+
+.dot {
+    width: 50px;
+    height: 50px;
+    margin: 0 5px;
+    background-image: url(retek1-szurke.png);
+    cursor: pointer;
+}
+
+.dot.active {
+    background-image: url(retek1.png);
+}
+.slider-container2 {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 10px;
+    transform: translateX() translateY();
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.slider2 {
+    display: flex;
+    transition: transform 0.2s ease-in-out;
+}
+
+.slide2 {
+    position: absolute;
+	width: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.slide2.active {
+    opacity: 1;
+}
+
+
+.prev2 { 
+	transform: translateY(-180px)translateX(-50px);
+    position: relative;
+    cursor: pointer;
+    border: none;
+    font-size: 40px;
+    background-color: transparent;
+    border-radius: 10px;
+}
+.next2 { 
+    position: relative;
+    transform: translateY(-180px) translateX(230px);
+    border: none;
+    cursor: pointer;
+    font-size: 40px;
+    background-color: transparent;
+    border-radius: 10px;
+ }
+
+.dots-container2 {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    margin-top: 10px;
+    transform: translateX(80px) translateY(-15px);
+}
+
+.dot2 {
+    width: 50px;
+    height: 50px;
+    background-image: url(retek1-szurke.png);
+    cursor: pointer;
+}
+
+.dot2.active {
+    background-image: url(retek1.png);
+}
+.egesz2 {
+    position: fixed;
+    top: 30%;
+    right: 100px;
+}
+#egyeb {
+    position: fixed;
+    top: 18%;
+    right: 10px;
+    text-align: right;
+	font-size: 200%;
+	font-family: Swinepighu;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+#SWINE {
+	text-align: left;
+	font-size: 200%;
+	font-family: Swinepighu;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+
+.scroll-container {
+    width: 100%;
+	transform: translateX(0);
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+	transform: translateY(50%);
+	background-color: #bd5920;
+	background-attachment: scroll;
+}
+
+.scroll-content {
+    display: flex;
+    gap: 20px; /* Adjust spacing between images */
+    animation: scrollLoop 5s linear infinite alternate;
+}
+
+/* Keyframes for infinite scrolling */
+@keyframes scrollLoop {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(55%); /* Moves half the content width */
+    }
+}
+
+.scroll-content img {
+    width: 50px;
+    height: 50px;
+}
+.scroll-content2 {
+    display: flex;
+    gap: 20px;
+    animation: scrollLoop 5s linear infinite alternate;
+}
+.scroll-container2 {
+    width: 100%;
+	transform: translateX(0);
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+	transform: translateY(-32%);
+	background-color: #bd5920;
+	background-attachment: scroll;
+}
+.scroll-content2 img {
+    width: 50px;
+    height: 50px;
+}
+
+.contact-title {
+    margin-left: 100px;
+}
+
+.contact-list {
+}
+
+.contact-list li {
+	font-size: 200%;
+}
+
+.contact-list li span {
+}
+#ember span{
+	margin-left: 100px;
+}
+.arnyek {
+	z-index: -2;
+	width: 80%;
+	height: 80%;
+	transform: translateX(-300px) translateY(130px);
+}
+.hatter_kell {
+	background-color: #371a09;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+	-webkit-text-stroke: 1px black;
+	color: #F5DEB3;
+	font-family: Swinepighu;
+}
+        .language-buttons button {
+            margin: 5px;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            background-color: gray;
+            width: 50px;
+            height: 30px;
+
+
+        }
+        .language-buttons button:hover {
+            background-color: blue;
+        }
+
+#magyar{
+    background-image: url(magyar.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#nemet{
+    background-image: url(nemet.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#angol{
+    background-image: url(angol.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: center;
+
+}
+#yt{
+    background-image: url(youtube-logo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: top;
+
+}
+#dc{
+    background-image: url(discord-logo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: top;
+
+}

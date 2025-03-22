@@ -1,0 +1,20 @@
+
+@font-face {
+    font-family: Swinepighu;
+    src: url(SWINPH.ttf);
+  }
+
+body {
+    background: url('WHNHNC.png') no-repeat;
+	background-size: cover;
+	background-attachment: scroll;
+}
+#title{
+	height: 35rem;
+	width: 55vw;
+	top: 5vh;
+	left: 30rem;
+	position: absolute;
+
+
+}

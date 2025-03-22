@@ -1,0 +1,22 @@
+<html>
+<body>
+<script>
+    window.onload = function () {
+        // Detect the user's browser language
+        let userLang = navigator.language || navigator.userLanguage; 
+        userLang = userLang.substring(0, 2).toLowerCase(); // Get first two letters
+
+        // Define supported languages
+        const supportedLanguages = ["hu", "de", "en"];
+        
+        // If the detected language is supported, redirect to that version
+        if (supportedLanguages.includes(userLang)) {
+            window.location.href = "https://csibicsenel.rf.gd/" + userLang + "/";
+        } else {
+            // If language is not supported, default to English
+            window.location.href = "https://csibicsenel.rf.gd/en/";
+        }
+    };
+</script>
+</html>
+</body>
