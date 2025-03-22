@@ -1,9 +1,5 @@
-
-@font-face {
-    font-family: Swinepighu;
-    src: url(SWINPH.ttf);
-  }
-
+@media only screen and (max-width: 1900) {
+	
 body {
     background: url('WHNHNC.png') no-repeat;
 	background-size: cover;
@@ -18,3 +14,8 @@ body {
 
 
 }
+ }
+@font-face {
+    font-family: Swinepighu;
+    src: url(SWINPH.ttf);
+  }
