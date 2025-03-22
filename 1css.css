@@ -3,7 +3,7 @@
 body {
     background: url('WHNHNC.png') no-repeat;
 	background-size: cover;
-	background-attachment: scroll;
+	background-attachment: fixed;
 }
 #title{
 	height: 35rem;
