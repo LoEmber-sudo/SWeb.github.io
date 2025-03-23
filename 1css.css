@@ -1,21 +1,379 @@
-@media only screen and (min-width: 1000) {
-	
-.body {
+
+body {
     background: url('WHNHNC.png') no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
+	background-size: 100%;
+	background-attachment: scroll;
+
 }
 #title{
-	height: 35rem;
-	width: auto;
-	top: 5vh;
-	left: 30rem;
-	position: absolute;
-
-
+    max-width: 100%;
+    height: auto;
+    width: 40%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
- }
 @font-face {
     font-family: Swinepighu;
     src: url(SWINPH.ttf);
+  }
+#swine_gomb{
+    border: transparent;
+    position: relative;
+    right: -20%;
+    transform: translateY(40%);
+    max-width: 100%;
+    width: 10%;
+    height: 10%;
+    scale: 280%;
+    background-color: transparent;
+    object-fit: contain;
+    z-index: 1;
+
+}
+#swine_kep{
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+    z-index: 1;
+}
+#proj_gomb{
+    border: transparent;
+    position: relative;
+    left: 60%;
+    transform: translateY(40%);
+    max-width: 100%;
+    width: 10%;
+    height: 10%;
+    scale: 280%;
+    background-color: transparent;
+    object-fit: contain;
+    z-index: 1;
+}
+#proj_kep{
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+    z-index: 1;
+}
+.a {
+    z-index: 1;
+}
+#set_gomb{
+    color:transparent;
+    background-color: transparent;
+    border: transparent;
+    position: sticky;
+    transform: translateX(93vw) translateY(1vh);
+    width: 5%;
+    height: 5%;
+    cursor: url("kek_hover.png"), pointer;
+
+}
+#set_kep{
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+    scale: 100%;
+    z-index: 1;
+}
+html {
+    cursor: url("kek_cursor.png"), auto;
+}
+
+a{
+    cursor: url("kek_hover.png"), pointer;
+}
+button{
+    cursor: url("kek_cursor.png"), auto;
+}
+.rectangle {
+	width: 102%;
+	height: 30%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    position: relative;
+    transform: translateY(-120%);
+	z-index: -10;
+    left: -2%;
+    display: block;
+        }
+
+    .rectangle img {
+        max-width: 100%;
+        max-height: 300%;
+        width: 100%;
+        height: 300%;
+        z-index: -10;
+        }
+
+        .slider-container {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            max-width: 25vw;
+            transform: translateY(-10vh);
+            left: 12%;
+            background-size:cover;
+            background-image: url("7a_javított.png");
+            background-repeat: no-repeat;
+            z-index: -1;
+            margin-right: 25vw;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .slider {
+            display: flex;
+            z-index: 1;
+            transition: transform 0.2s ease-in-out;
+        }
+        
+        .slide {
+            position: absolute;
+            width: 100%;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+        
+        .slide.active {
+                opacity: 1;
+                position: relative;
+        }
+        
+        
+        .prev, .next {
+            position: absolute;
+            z-index: 3;
+            background-color: transparent;
+            border: none;
+            cursor: url("kek_hover.png"), pointer;
+            padding: 10px;
+            font-size: 40px;
+            border-radius: 10px;
+        }
+        
+        .prev { 
+            position:static;
+            transform: translateY(-40vh) translateX(9vw);
+            z-index: 3;
+        }
+        .prev img{
+            height: auto;
+            width: 3vw;
+
+        }
+        .next {
+            position: static;
+            transform: translateY(-40vh) translateX(31vw);
+            z-index: 3;
+         }
+         .next img{
+            height: auto;
+            width: 3vw;
+         }
+        .dots-container {
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+            left: 17%;
+            transform: translateY(-18vh);
+            z-index: 1;
+        }
+        
+        .dot {
+            width: 3vw;
+            height: 3vw;
+            background-image: url(retek1-szurke.png);
+            cursor: pointer;
+            z-index: 1;
+            background-repeat: no-repeat;
+            background-size: contain;
+            cursor: url("kek_hover.png"), pointer;
+        }
+        
+        .dot.active {
+            background-image: url(retek1.png);
+            z-index: 1;
+            cursor: url("kek_hover.png"), pointer;
+        }
+
+
+
+
+
+
+
+        .slider-container2 {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            max-width: 25vw;
+            transform: translateY(-10vh);
+            left: 12%;
+            background-size:cover;
+            background-image: url("7a_javított.png");
+            background-repeat: no-repeat;
+            z-index: -1;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .slider2 {
+            display: flex;
+            z-index: 1;
+            transition: transform 0.2s ease-in-out;
+        }
+        
+        .slide2 {
+            position: absolute;
+            width: 100%;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+        
+        .slide2.active {
+                opacity: 1;
+                position: relative;
+        }
+        
+        
+        .prev2, .next2 {
+            position: absolute;
+            z-index: 3;
+            background-color: transparent;
+            border: none;
+            cursor: url("kek_hover.png"), pointer;
+            padding: 10px;
+            font-size: 40px;
+            border-radius: 10px;
+        }
+        
+        .prev2 { 
+            position:static;
+            transform: translateY(-40vh) translateX(51vw);
+            z-index: 3;
+        }
+        .prev2 img{
+            height: auto;
+            width: 3vw;
+
+        }
+        .next2 {
+            position: static;
+            transform: translateY(-40vh) translateX(73vw);
+            z-index: 3;
+         }
+         .next2 img{
+            height: auto;
+            width: 3vw;
+         }
+        .dots-container2 {
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+            left: 17%;
+            transform: translateY(-19vh) translateX(50vw);
+            z-index: 1;
+        }
+        
+        .dot2 {
+            width: 3vw;
+            height: 3vw;
+            background-image: url(retek1-szurke.png);
+            cursor: pointer;
+            z-index: 1;
+            background-repeat: no-repeat;
+            background-size: contain;
+            cursor: url("kek_hover.png"), pointer;
+        }
+        
+        .dot2.active {
+            background-image: url(retek1.png);
+            z-index: 1;
+            cursor: url("kek_hover.png"), pointer;
+        }
+main {
+    display: flex;
+
+}
+#also_hatter {
+    position: relative;
+    max-width: 98vw;
+    z-index: -30;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translateY(-10vh);
+    background-color: rgba(250, 0, 0, 0.2);
+}
+#felso_szoveg {
+    position: absolute;
+    min-width: 40%;
+    min-height: 40%;
+    left: 1px;
+    z-index: 1;
+
+}
+.image-links {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: left;
+    padding: 20px;
+    background-color: rgba(250, 125, 125, 0.1);
+  }
+  .image-links a {
+    display: block;
+    width: 5vw;
+    height: 5vh;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+  }
+  .image-links a:hover {
+    transform: scale(1.05);
+  }
+  .image-links img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+
+
+
+
+  .social-links {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    background-color: rgba(250, 125, 125, 0.1); /* soft red tint */
+  }
+  .social-links a {
+    display: block;
+    width: 3vw;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+  }
+  .social-links a:hover {
+    transform: scale(1.05);
+  }
+  .social-links img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
   }
